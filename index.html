@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vitesse, distance, temps et allure — V·D·T</title>
-<meta name="description" content="V·D·T calcule une vitesse, une distance, un temps ou une allure en deux saisies, avec chronomètre, splits et prédictions de course. Pour iPhone. Sans compte, sans publicité.">
+<title>Lièvre — demi-fond, VMA et plots pour l'EPS et le club</title>
+<meta name="description" content="Lièvre mesure la VMA de chaque élève, calcule ses objectifs de séance (distance, plot à atteindre, temps à tenir) et anime le demi-fond au bip. Pour iPhone, sans compte ni connexion.">
 <link rel="icon" href="images/icone.png">
 <link rel="apple-touch-icon" href="images/icone.png">
 <link rel="stylesheet" href="style.css">
@@ -12,8 +12,8 @@
 <body>
 <header class="bandeau">
   <div class="dedans">
-    <h1><img class="icone" src="images/icone.png" alt="" width="56" height="56">V·D·T</h1>
-    <p class="accroche">Vitesse, distance, temps : deux valeurs connues, la troisième en un geste</p>
+    <h1><img class="icone" src="images/icone.png" alt="" width="56" height="56">Lièvre</h1>
+    <p class="accroche">Le demi-fond de la classe, chacun à son allure</p>
     <nav>
       <a href="index.html" aria-current="page">L'application</a>
       <a href="assistance.html">Assistance</a>
@@ -24,58 +24,64 @@
 </header>
 <main class="dedans">
   <div class="encadre">
-    <p><strong>Une distance et un temps donnent une vitesse ; une vitesse et un temps, une
-    distance ; une distance et une vitesse, une durée.</strong> V·D·T fait ces trois calculs, et le
-    quatrième que tout coureur se pose : l'allure au kilomètre. Chaque résultat arrive avec ses
-    équivalents dans les autres unités, pour la course à pied, le vélo, la route ou la mer. Pour
-    iPhone.</p>
+    <p><strong>En demi-fond, chacun court à son allure : un pourcentage de sa VMA.</strong> Lièvre est
+    l'outil du professeur d'EPS et de l'entraîneur pour le faire vivre à tout un groupe : il mesure la
+    VMA de chaque élève, calcule ses objectifs à chaque séance — la distance à parcourir et le plot à
+    atteindre, ou le temps à tenir — et anime la séance au bip. Un seul iPhone, sans connexion, sans
+    compte : les noms des élèves restent sur l'appareil.</p>
   </div>
 
   <div class="galerie">
-    <figure><img src="images/vitesse.jpg" alt="Onglet Vitesse : 10 km en 45 minutes donnent 13,33 km/h, avec les équivalents en m/s, mph, allure et nœuds." width="600" height="1304">
-      <figcaption>10 km en 45 min : 13,33 km/h</figcaption></figure>
-    <figure><img src="images/allure.jpg" alt="Onglet Allure : un semi-marathon en 1 h 45 donne 4'58&quot; au kilomètre, et les temps prédits sur 1 km, 5 km, 10 km et marathon." loading="lazy" width="600" height="1304">
-      <figcaption>L'allure, et ce qu'elle promet ailleurs</figcaption></figure>
-    <figure><img src="images/temps.jpg" alt="Onglet Temps : un marathon à 12 km/h dure 3 h 30 min 58 s, avec l'heure d'arrivée et les temps de passage kilomètre par kilomètre." loading="lazy" width="600" height="1304">
-      <figcaption>La durée, l'heure d'arrivée, les splits</figcaption></figure>
-    <figure><img src="images/chrono.jpg" alt="Le chronomètre en marche, trois tours enregistrés, et le bouton Utiliser ce temps." loading="lazy" width="600" height="1304">
-      <figcaption>Un chrono qui remplit le champ temps</figcaption></figure>
+    <figure><img src="images/seance.jpg" alt="Séance « 6 × 1 min à 90 % VMA » : pour chaque élève de la 5e B, sa vitesse, sa distance et le plot à atteindre, avec le contrôle à 30 secondes." width="600" height="1304">
+      <figcaption>Un objectif par élève : distance et plot</figcaption></figure>
+    <figure><img src="images/test.jpg" alt="Test VAMEVAL en cours, palier 8 à 11,5 km/h : les élèves encore en course en bleu, ceux qui se sont arrêtés avec leur VMA." loading="lazy" width="600" height="1304">
+      <figcaption>Le test VMA joué par l'app ; un toucher à l'arrêt</figcaption></figure>
+    <figure><img src="images/seance-en-cours.jpg" alt="Séance en cours : effort 3 sur 6, 33 secondes restantes, prochain contrôle à 30 secondes, et les objectifs de chacun." loading="lazy" width="600" height="1304">
+      <figcaption>La séance au bip, avec la voix</figcaption></figure>
+    <figure><img src="images/groupe.jpg" alt="Le groupe 5e B : 24 élèves, VMA moyenne 12,4 km/h, la VMA et le test d'origine de chacun." loading="lazy" width="600" height="1304">
+      <figcaption>La classe et ses VMA</figcaption></figure>
   </div>
 
-  <h2>Quatre calculs</h2>
+  <h2>Mesurer la VMA</h2>
   <ul>
-    <li><strong>Vitesse</strong> — à partir d'une distance et d'un temps : km/h, m/s, mph, nœuds,
-    allure au kilomètre et au mile, temps au tour de piste de 400 m.</li>
-    <li><strong>Distance</strong> — à partir d'une vitesse et d'un temps : kilomètres, mètres, miles,
-    milles marins, tours de piste, et la part d'un 10 km, d'un semi, d'un marathon ou d'un 100 km
-    déjà couverte.</li>
-    <li><strong>Temps</strong> — à partir d'une distance et d'une vitesse : la durée au centième,
-    l'heure d'arrivée si l'on part maintenant, et les temps de passage par kilomètre ou par mile, à
-    partager.</li>
-    <li><strong>Allure</strong> — d'une course, on tire l'allure au kilomètre et les temps qu'elle
-    laisse espérer sur les autres distances (formule de Riegel). D'une allure, on tire la vitesse et
-    le temps final sur 1 km, 5 km, 10 km, semi, marathon et 100 km.</li>
+    <li><strong>Test à paliers</strong> — l'app joue la bande-son : un bip quand chacun doit passer un
+    plot, deux bips aigus et la voix à chaque nouveau palier. VAMEVAL (8 km/h, +0,5 km/h par minute,
+    plots tous les 20 m), Léger-Boucher (8 km/h, +1 km/h toutes les 2 minutes, plots tous les 50 m) ou
+    vos propres réglages. Vous touchez le nom d'un élève quand il s'arrête : la vitesse de son dernier
+    palier terminé devient sa VMA.</li>
+    <li><strong>Demi-Cooper</strong> — 6 minutes chronométrées, chaque minute annoncée ; vous saisissez
+    les distances, la VMA en découle (distance en mètres ÷ 100).</li>
+    <li>Ou les VMA déjà connues, tapées ou collées avec la liste de la classe.</li>
   </ul>
 
-  <h2>Pensé pour la saisie</h2>
-  <ul>
-    <li>Distances en km, m, miles, yards ou milles marins ; vitesses en km/h, m/s, mph, nœuds ou
-    pieds par seconde.</li>
-    <li>Raccourcis d'une touche : 400 m, 5 km, 10 km, semi, marathon ; 5, 10, 25, 50, 90 ou 130 km/h.</li>
-    <li>Le temps se saisit en heures, minutes, secondes et centièmes ; une case vide vaut zéro.</li>
-    <li>Virgule ou point, les deux sont acceptés.</li>
-    <li>Un chronomètre avec tours, dont la mesure se verse dans le champ temps.</li>
-  </ul>
+  <h2>Une séance, un objectif par élève</h2>
+  <p>Effort en durée ou en distance, intensité en pourcentage de VMA, répétitions, récupération, écart
+  entre les plots, longueur de la piste, contrôles intermédiaires. Pour un effort en durée, chacun lit
+  sa distance et le plot à atteindre (« P7 +5 m », « 1 tour + P3 ») ; pour un effort en distance, son
+  temps et son allure. Des modèles pour démarrer : 30-30, fractionné, endurance, 3 × 500 m.</p>
 
-  <h2>Un historique qui se recharge</h2>
-  <p>Les 60 derniers calculs s'enregistrent d'eux-mêmes. Un toucher rouvre le calcul dans son
-  onglet, champs remplis ; un appui long le partage ou le supprime. Et pour se faire une idée de la
-  vitesse obtenue, V·D·T la compare à un repère familier, de l'escargot à la lumière.</p>
+  <h2>Au bip</h2>
+  <p>« Lancer la séance » : départ dans 5 secondes, bip long au départ, bip aigu aux contrôles, trois
+  bips à la fin de l'effort, compte à rebours de la récupération et voix qui annonce la répétition
+  suivante. Pour un effort en distance, vous touchez chaque coureur à l'arrivée : son temps s'affiche
+  avec l'écart à son objectif.</p>
+
+  <h2>La feuille de la classe</h2>
+  <p>Le tableau de la séance, élève par élève, en A4 : à imprimer pour le terrain ou à envoyer.</p>
+
+  <h2>Le lièvre sonore</h2>
+  <p>Un bip chaque fois qu'un coureur à la vitesse choisie passe un plot : pour un groupe de même
+  niveau, ou pour apprendre une allure.</p>
+
+  <h2>Et les calculs V·D·T</h2>
+  <p>L'onglet Calculs garde le calculateur complet : vitesse, distance, temps et allure à partir de deux
+  valeurs, en km, miles ou milles marins ; temps de passage ; prédictions de course (formule de
+  Riegel) ; chronomètre à tours ; historique des 60 derniers calculs.</p>
 
   <h2>Sans rien de superflu</h2>
-  <p>Pas de compte, pas de publicité, aucun achat intégré, aucune donnée collectée. Tout se calcule
-  sur votre iPhone, hors connexion.</p>
+  <p>Pas de compte, pas de publicité, aucun achat intégré, aucune donnée collectée. Tout fonctionne sur
+  l'iPhone, hors connexion. Gratuit.</p>
 </main>
-<footer class="dedans">V·D·T — Robert Oulhen, éditeur individuel · <a href="mailto:bob.oulhen@gmail.com">bob.oulhen@gmail.com</a></footer>
+<footer class="dedans">Lièvre — Robert Oulhen, éditeur individuel · <a href="mailto:bob.oulhen@gmail.com">bob.oulhen@gmail.com</a></footer>
 </body>
 </html>
